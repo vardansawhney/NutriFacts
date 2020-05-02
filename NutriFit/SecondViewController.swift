@@ -19,4 +19,9 @@ class SecondViewController: UIViewController {
     @IBAction func back_button(_ sender: Any) {
         self.performSegue(withIdentifier: "backToHome", sender: self)
     }
+    
+    @IBAction func TestButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToScan", sender: self)
+    }
+    
 }
