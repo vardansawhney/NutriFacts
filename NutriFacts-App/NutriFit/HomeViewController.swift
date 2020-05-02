@@ -16,12 +16,10 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func log_in(_ sender: Any) {
-        print("Login is printed")
     }
     
     @IBAction func sign_up(_ sender: Any) {
         self.performSegue(withIdentifier: "SecondViewSegue", sender: self)
-        print("Signup is printed")
     }
 }
 

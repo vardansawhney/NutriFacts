@@ -10,7 +10,17 @@ import UIKit
 
 
 class SignupViewController: UIViewController {
-
+    
+    // email and password for signup
+    // email
+    @IBOutlet weak var EmailTextField: UITextField!
+    
+    // password
+    @IBOutlet weak var PasswordTextField: UITextField!
+    
+    @IBOutlet weak var SignupButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -22,6 +32,11 @@ class SignupViewController: UIViewController {
     
     @IBAction func TestButton(_ sender: Any) {
         self.performSegue(withIdentifier: "ToScan", sender: self)
+    }
+    
+    // handle sign up button tap
+    
+    @IBAction func SignupTapped(_ sender: Any) {
     }
     
 }
