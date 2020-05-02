@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,10 +64,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign up" translatesAutoresizingMaskIntoConstraints="NO" id="Ij0-fy-MyN">
-                                <rect key="frame" x="25" y="102" width="133" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="email" translatesAutoresizingMaskIntoConstraints="NO" id="r8z-qS-N1a">
                                 <rect key="frame" x="61" y="213" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -81,7 +77,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE0-Nb-Qeg">
-                                <rect key="frame" x="63" y="426" width="288" height="59"/>
+                                <rect key="frame" x="63" y="392" width="288" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Sign Up Button"/>
                                 <connections>
@@ -89,13 +85,13 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="or" translatesAutoresizingMaskIntoConstraints="NO" id="p7i-2f-hE3">
-                                <rect key="frame" x="190" y="522" width="34" height="18"/>
+                                <rect key="frame" x="190" y="488" width="34" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DWX-xT-Xqc">
-                                <rect key="frame" x="63" y="574" width="288" height="59"/>
+                                <rect key="frame" x="63" y="540" width="288" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="log in with facebook"/>
+                                <state key="normal" image="Sign up with Facebook"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2n-uh-RD7">
                                 <rect key="frame" x="25" y="29" width="27" height="27"/>
@@ -105,10 +101,19 @@
                                     <action selector="back_button:" destination="4Og-39-VaP" eventType="touchUpInside" id="HLt-SE-9hV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqw-Oe-ISW">
-                                <rect key="frame" x="63" y="717" width="288" height="59"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sign up" translatesAutoresizingMaskIntoConstraints="NO" id="Ij0-fy-MyN">
+                                <rect key="frame" x="141" y="98" width="133" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="test button"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfQ-gp-88O">
+                                <rect key="frame" x="63" y="616" width="288" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Sign up with Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqw-Oe-ISW">
+                                <rect key="frame" x="63" y="728" width="288" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="test button-1"/>
                                 <connections>
                                     <action selector="TestButton:" destination="4Og-39-VaP" eventType="touchUpInside" id="DQt-jN-z0X"/>
                                 </connections>
@@ -136,10 +141,68 @@
                     <view key="view" contentMode="scaleToFill" id="a96-UB-PpB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" background="email" translatesAutoresizingMaskIntoConstraints="NO" id="8IY-jC-7A5">
+                                <rect key="frame" x="61" y="205" width="292" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="log in with facebook" translatesAutoresizingMaskIntoConstraints="NO" id="aFB-CH-RUS">
+                                <rect key="frame" x="61" y="278" width="292" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Log in-1" translatesAutoresizingMaskIntoConstraints="NO" id="3jX-3t-wee">
+                                <rect key="frame" x="141" y="90" width="133" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="or" translatesAutoresizingMaskIntoConstraints="NO" id="VuV-Sc-hDP">
+                                <rect key="frame" x="190" y="474" width="34" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33B-oy-x2D">
+                                <rect key="frame" x="63" y="526" width="288" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="log in with facebook"/>
+                                <connections>
+                                    <action selector="logInFacebook:" destination="SU9-VU-vzM" eventType="touchUpInside" id="NhS-sE-4WD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQO-TJ-3fY">
+                                <rect key="frame" x="63" y="611" width="288" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="log in with google"/>
+                                <connections>
+                                    <action selector="logInGoogle:" destination="SU9-VU-vzM" eventType="touchUpInside" id="VJF-Cq-Cmj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlE-lm-bhZ">
+                                <rect key="frame" x="27" y="51" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Back button"/>
+                                <connections>
+                                    <action selector="backButton:" destination="SU9-VU-vzM" eventType="touchUpInside" id="93J-AI-qLm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="12f-du-ZoF">
+                                <rect key="frame" x="63" y="371" width="288" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="log in button-1"/>
+                                <connections>
+                                    <action selector="SignupTapped:" destination="4Og-39-VaP" eventType="touchUpInside" id="sp6-Ac-uKZ"/>
+                                    <action selector="logInButton:" destination="SU9-VU-vzM" eventType="touchUpInside" id="8aa-wp-rkq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="b7m-7j-HAI"/>
                     </view>
                     <navigationItem key="navigationItem" id="uR7-wd-w4f"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="ToHome" id="tKX-oc-Fi6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mV3-1g-3H1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,19 +242,27 @@
             <point key="canvasLocation" x="1611.5942028985507" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sSc-Py-Rnt"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Back button" width="27" height="27"/>
         <image name="Banner bottom" width="510" height="329.5"/>
         <image name="Log In Button" width="288" height="59"/>
+        <image name="Log in-1" width="94" height="34"/>
         <image name="Sign Up Button" width="288" height="59"/>
+        <image name="Sign up with Facebook" width="288" height="59"/>
+        <image name="Sign up with Google" width="288" height="59"/>
         <image name="email" width="316" height="54"/>
+        <image name="log in button-1" width="288" height="59"/>
         <image name="log in with facebook" width="288" height="59"/>
+        <image name="log in with google" width="288" height="59"/>
         <image name="logo" width="337" height="65"/>
         <image name="or" width="22" height="17"/>
         <image name="scan button" width="51" height="51"/>
         <image name="sign up" width="108" height="34"/>
         <image name="slogan" width="256" height="44"/>
-        <image name="test button" width="288" height="59"/>
+        <image name="test button-1" width="288" height="59"/>
         <image name="top banner" width="482.5" height="329.5"/>
         <image name="welcome text" width="322" height="154"/>
     </resources>

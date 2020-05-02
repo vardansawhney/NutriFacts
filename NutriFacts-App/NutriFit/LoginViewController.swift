@@ -17,6 +17,23 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func backButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToHome", sender: self)
+    }
+    
+    @IBAction func signUpButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func logInButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func logInFacebook(_ sender: Any) {
+    }
+    
+    @IBAction func logInGoogle(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 
