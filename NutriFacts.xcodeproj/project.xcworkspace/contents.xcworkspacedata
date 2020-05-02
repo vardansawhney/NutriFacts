@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NutriFit.xcodeproj">
+      location = "self:/Users/irischen/Desktop/NutriFacts/NutriFacts.xcodeproj">
    </FileRef>
 </Workspace>

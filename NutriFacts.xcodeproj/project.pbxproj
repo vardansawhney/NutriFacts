@@ -14,8 +14,9 @@
 		1778734C245DDD50009EEB28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1778734B245DDD50009EEB28 /* Assets.xcassets */; };
 		1778734F245DDD50009EEB28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1778734D245DDD50009EEB28 /* LaunchScreen.storyboard */; };
 		1778735A245DDD51009EEB28 /* NutriFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787359245DDD51009EEB28 /* NutriFitTests.swift */; };
-		17787365245DE68C009EEB28 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787364245DE68C009EEB28 /* SecondViewController.swift */; };
-		17787367245DF8BF009EEB28 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787366245DF8BF009EEB28 /* ThirdViewController.swift */; };
+		17787365245DE68C009EEB28 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787364245DE68C009EEB28 /* SignupViewController.swift */; };
+		17787367245DF8BF009EEB28 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787366245DF8BF009EEB28 /* ScanViewController.swift */; };
+		4435B04A245E057800B9F7F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435B049245E057800B9F7F1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1778733F245DDD49009EEB28 /* NutriFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1778733F245DDD49009EEB28 /* NutriFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17787342245DDD49009EEB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17787344245DDD49009EEB28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17787346245DDD49009EEB28 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -37,11 +38,12 @@
 		1778734B245DDD50009EEB28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1778734E245DDD50009EEB28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17787350245DDD50009EEB28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17787355245DDD51009EEB28 /* NutriFitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriFitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17787355245DDD51009EEB28 /* NutriFactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NutriFactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17787359245DDD51009EEB28 /* NutriFitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutriFitTests.swift; sourceTree = "<group>"; };
 		1778735B245DDD51009EEB28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17787364245DE68C009EEB28 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		17787366245DF8BF009EEB28 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		17787364245DE68C009EEB28 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		17787366245DF8BF009EEB28 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		4435B049245E057800B9F7F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +76,8 @@
 		17787340245DDD49009EEB28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1778733F245DDD49009EEB28 /* NutriFit.app */,
-				17787355245DDD51009EEB28 /* NutriFitTests.xctest */,
+				1778733F245DDD49009EEB28 /* NutriFacts.app */,
+				17787355245DDD51009EEB28 /* NutriFactsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,11 +85,13 @@
 		17787341245DDD49009EEB28 /* NutriFit */ = {
 			isa = PBXGroup;
 			children = (
+				17787346245DDD49009EEB28 /* HomeViewController.swift */,
+				17787366245DF8BF009EEB28 /* ScanViewController.swift */,
+				4435B049245E057800B9F7F1 /* LoginViewController.swift */,
+				17787364245DE68C009EEB28 /* SignupViewController.swift */,
+				4435B048245E054100B9F7F1 /* ViewControllers */,
 				17787342245DDD49009EEB28 /* AppDelegate.swift */,
 				17787344245DDD49009EEB28 /* SceneDelegate.swift */,
-				17787346245DDD49009EEB28 /* HomeViewController.swift */,
-				17787364245DE68C009EEB28 /* SecondViewController.swift */,
-				17787366245DF8BF009EEB28 /* ThirdViewController.swift */,
 				17787348245DDD49009EEB28 /* Main.storyboard */,
 				1778734B245DDD50009EEB28 /* Assets.xcassets */,
 				1778734D245DDD50009EEB28 /* LaunchScreen.storyboard */,
@@ -105,12 +109,19 @@
 			path = NutriFitTests;
 			sourceTree = "<group>";
 		};
+		4435B048245E054100B9F7F1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1778733E245DDD49009EEB28 /* NutriFit */ = {
+		1778733E245DDD49009EEB28 /* NutriFacts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1778735E245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFit" */;
+			buildConfigurationList = 1778735E245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFacts" */;
 			buildPhases = (
 				1778733B245DDD49009EEB28 /* Sources */,
 				1778733C245DDD49009EEB28 /* Frameworks */,
@@ -120,14 +131,14 @@
 			);
 			dependencies = (
 			);
-			name = NutriFit;
+			name = NutriFacts;
 			productName = NutriFit;
-			productReference = 1778733F245DDD49009EEB28 /* NutriFit.app */;
+			productReference = 1778733F245DDD49009EEB28 /* NutriFacts.app */;
 			productType = "com.apple.product-type.application";
 		};
-		17787354245DDD51009EEB28 /* NutriFitTests */ = {
+		17787354245DDD51009EEB28 /* NutriFactsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17787361245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFitTests" */;
+			buildConfigurationList = 17787361245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFactsTests" */;
 			buildPhases = (
 				17787351245DDD51009EEB28 /* Sources */,
 				17787352245DDD51009EEB28 /* Frameworks */,
@@ -138,9 +149,9 @@
 			dependencies = (
 				17787357245DDD51009EEB28 /* PBXTargetDependency */,
 			);
-			name = NutriFitTests;
+			name = NutriFactsTests;
 			productName = NutriFitTests;
-			productReference = 17787355245DDD51009EEB28 /* NutriFitTests.xctest */;
+			productReference = 17787355245DDD51009EEB28 /* NutriFactsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1778733A245DDD48009EEB28 /* Build configuration list for PBXProject "NutriFit" */;
+			buildConfigurationList = 1778733A245DDD48009EEB28 /* Build configuration list for PBXProject "NutriFacts" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,8 +186,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1778733E245DDD49009EEB28 /* NutriFit */,
-				17787354245DDD51009EEB28 /* NutriFitTests */,
+				1778733E245DDD49009EEB28 /* NutriFacts */,
+				17787354245DDD51009EEB28 /* NutriFactsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -206,9 +217,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17787365245DE68C009EEB28 /* SecondViewController.swift in Sources */,
+				4435B04A245E057800B9F7F1 /* LoginViewController.swift in Sources */,
+				17787365245DE68C009EEB28 /* SignupViewController.swift in Sources */,
 				17787347245DDD49009EEB28 /* HomeViewController.swift in Sources */,
-				17787367245DF8BF009EEB28 /* ThirdViewController.swift in Sources */,
+				17787367245DF8BF009EEB28 /* ScanViewController.swift in Sources */,
 				17787343245DDD49009EEB28 /* AppDelegate.swift in Sources */,
 				17787345245DDD49009EEB28 /* SceneDelegate.swift in Sources */,
 			);
@@ -227,7 +239,7 @@
 /* Begin PBXTargetDependency section */
 		17787357245DDD51009EEB28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1778733E245DDD49009EEB28 /* NutriFit */;
+			target = 1778733E245DDD49009EEB28 /* NutriFacts */;
 			targetProxy = 17787356245DDD51009EEB28 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -420,7 +432,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutriFit.app/NutriFit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutriFacts.app/NutriFacts";
 			};
 			name = Debug;
 		};
@@ -442,14 +454,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutriFit.app/NutriFit";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NutriFacts.app/NutriFacts";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1778733A245DDD48009EEB28 /* Build configuration list for PBXProject "NutriFit" */ = {
+		1778733A245DDD48009EEB28 /* Build configuration list for PBXProject "NutriFacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1778735C245DDD51009EEB28 /* Debug */,
@@ -458,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1778735E245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFit" */ = {
+		1778735E245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFacts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1778735F245DDD51009EEB28 /* Debug */,
@@ -467,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17787361245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFitTests" */ = {
+		17787361245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFactsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17787362245DDD51009EEB28 /* Debug */,
