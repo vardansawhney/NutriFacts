@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		033EC2969F423C32C1BD1F7B /* Pods_NutriFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB70D9DE396045B1161E54E /* Pods_NutriFacts.framework */; };
 		173E9D10245EC018007D9E7A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 173E9D0F245EC018007D9E7A /* icon.png */; };
+		173E9D16245EC764007D9E7A /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E9D15245EC764007D9E7A /* DataViewController.swift */; };
 		17787343245DDD49009EEB28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787342245DDD49009EEB28 /* AppDelegate.swift */; };
 		17787345245DDD49009EEB28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787344245DDD49009EEB28 /* SceneDelegate.swift */; };
 		17787347245DDD49009EEB28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787346245DDD49009EEB28 /* HomeViewController.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		173E9D0F245EC018007D9E7A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../../../PNGs/App Icon/icon.png"; sourceTree = "<group>"; };
+		173E9D15245EC764007D9E7A /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		1778733F245DDD49009EEB28 /* NutriFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17787342245DDD49009EEB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17787344245DDD49009EEB28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				17787366245DF8BF009EEB28 /* ScanViewController.swift */,
 				4435B049245E057800B9F7F1 /* LoginViewController.swift */,
 				17787364245DE68C009EEB28 /* SignupViewController.swift */,
+				173E9D15245EC764007D9E7A /* DataViewController.swift */,
 				4435B048245E054100B9F7F1 /* ViewControllers */,
 				17787342245DDD49009EEB28 /* AppDelegate.swift */,
 				17787344245DDD49009EEB28 /* SceneDelegate.swift */,
@@ -357,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4435B04A245E057800B9F7F1 /* LoginViewController.swift in Sources */,
+				173E9D16245EC764007D9E7A /* DataViewController.swift in Sources */,
 				17787365245DE68C009EEB28 /* SignupViewController.swift in Sources */,
 				178FBFC1245E34190057E68F /* Utilities.swift in Sources */,
 				17787347245DDD49009EEB28 /* HomeViewController.swift in Sources */,
