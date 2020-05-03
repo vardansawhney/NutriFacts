@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpElements()
     }
     
 
@@ -23,17 +24,35 @@ class LoginViewController: UIViewController {
     
     @IBAction func signUpButton(_ sender: Any) {
     }
+    // Textfields
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     
-    @IBAction func logInButton(_ sender: Any) {
-    }
+    @IBOutlet weak var errorLabel: UILabel!
     
+    
+    @IBOutlet weak var loginButton: UIButton!
+  
     
     @IBAction func logInFacebook(_ sender: Any) {
     }
     
     @IBAction func logInGoogle(_ sender: Any) {
     }
+    
+    func setUpElements () {
+        // Hide the error label
+        errorLabel.alpha = 0
+        
+        // Style the elements
+        // Utilities.styleTextField(emailTextField)
+        // Utilities.styleTextField(passwordTextField)
+        // Utilities.styleFilledButton(loginButton)
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

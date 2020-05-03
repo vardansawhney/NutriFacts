@@ -13,13 +13,26 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setUpElements()
     }
 
-    @IBAction func log_in(_ sender: Any) {
+
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
+    
+    // Buttons!
+    @IBAction func signUpButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "SecondViewSegue", sender: self)
     }
     
-    @IBAction func sign_up(_ sender: Any) {
-        self.performSegue(withIdentifier: "SecondViewSegue", sender: self)
+    @IBAction func logInButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToLogIn", sender: self)   
+    }
+    
+    
+    func setUpElements () {
+        // Utilities.styleFilledButton(signUpButton)
+        // Utilities.styleFilledButton(logInButton)
     }
 }
 
