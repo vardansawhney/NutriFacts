@@ -26,7 +26,9 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func logInButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "ToLogIn", sender: self)   
+        self.performSegue(withIdentifier: "ToLogIn", sender: self)
+        
+        
     }
     
     

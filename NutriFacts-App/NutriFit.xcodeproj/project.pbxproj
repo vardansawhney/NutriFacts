@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		17787367245DF8BF009EEB28 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787366245DF8BF009EEB28 /* ScanViewController.swift */; };
 		178FBFC1245E34190057E68F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178FBFC0245E34190057E68F /* Utilities.swift */; };
 		178FBFC4245E3E9F0057E68F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 178FBFC3245E3E9F0057E68F /* GoogleService-Info.plist */; };
+		179C4DA7245E5BA800F3D3B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179C4DA6245E5BA800F3D3B7 /* Constants.swift */; };
 		4435B04A245E057800B9F7F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435B049245E057800B9F7F1 /* LoginViewController.swift */; };
 		AE21EB1627D9A6EAC6496031 /* Pods_NutriFactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5436DAF4760B6AFDA2D4D1EC /* Pods_NutriFactsTests.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		17787366245DF8BF009EEB28 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		178FBFC0245E34190057E68F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		178FBFC3245E3E9F0057E68F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		179C4DA6245E5BA800F3D3B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		24E18FCFC760DDFD06F789F4 /* Pods-NutriFactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFactsTests.release.xcconfig"; path = "Target Support Files/Pods-NutriFactsTests/Pods-NutriFactsTests.release.xcconfig"; sourceTree = "<group>"; };
 		4435B049245E057800B9F7F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5436DAF4760B6AFDA2D4D1EC /* Pods_NutriFactsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutriFactsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				178FBFC0245E34190057E68F /* Utilities.swift */,
+				179C4DA6245E5BA800F3D3B7 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -150,7 +153,6 @@
 				6C4B2C71773CE74E4DD6F750 /* Pods-NutriFactsTests.debug.xcconfig */,
 				24E18FCFC760DDFD06F789F4 /* Pods-NutriFactsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -339,6 +341,7 @@
 				17787367245DF8BF009EEB28 /* ScanViewController.swift in Sources */,
 				17787343245DDD49009EEB28 /* AppDelegate.swift in Sources */,
 				17787345245DDD49009EEB28 /* SceneDelegate.swift in Sources */,
+				179C4DA7245E5BA800F3D3B7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
