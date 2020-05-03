@@ -13,6 +13,7 @@ target 'NutriFacts' do
   pod 'Firebase/Auth'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'GoogleSignIn'
 
   target 'NutriFactsTests' do
     inherit! :search_paths 

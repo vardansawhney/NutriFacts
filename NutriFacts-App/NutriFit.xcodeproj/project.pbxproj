@@ -177,6 +177,7 @@
 				1778733C245DDD49009EEB28 /* Frameworks */,
 				1778733D245DDD49009EEB28 /* Resources */,
 				C5D55C525231DE52108BD299 /* [CP] Embed Pods Frameworks */,
+				60FFED66EA259542D1A6F4A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,6 +267,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		60FFED66EA259542D1A6F4A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		86A13EDC4219974216375B6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
