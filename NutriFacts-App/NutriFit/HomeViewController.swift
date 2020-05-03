@@ -4,6 +4,7 @@
 import UIKit
 import VisionKit
 import Vision
+import Foundation
 
 class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelegate {
     
@@ -66,6 +67,61 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
             
             
             // Creating cleaned out version of this text
+            // Sample code
+            
+
+            // let newArray = detectedText.components(separatedBy: " ")
+            let newArray =  detectedText.replacingOccurrences(of: "\n", with: " ")
+            
+
+            // var firstName: String = newArray[0]
+            // var lastName: String = newArray[1]
+            // print("NEW NAMES:")
+            // print(firstName)
+            // print(lastName)
+            print("New Array:")
+            print(newArray)
+            
+            // Initializing our 6 wanted values
+            let iron = 0
+            let potassium = 0
+            let calcium = 0
+            let cholesterol = 0
+            let saturated = 0
+            let carbohydrates = 0
+            
+            
+            // For loop to go through each component
+            print("For loop bitch")
+            for label in detectedText.split(separator: " ") {
+                
+            /*
+                if label == "Iron"{
+                    label ==
+                }
+                
+                if label == "Potassium"{
+                    
+                }
+                
+                if label == "Calcium"{
+                    
+                }
+                
+                if label == "Cholesterol"{
+                    
+                }
+                
+                if label == "Saturated"{
+                    
+                }
+                
+                if label == "Carbohydrates" {
+                    
+                }
+                
+ */
+            }
             
         }
     }
