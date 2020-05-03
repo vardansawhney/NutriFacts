@@ -40,28 +40,31 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
         // Utilities.styleFilledButton(logInButton)
     }
     
+    // SCANNING WITH THE CAMERA
     private func configureDocumentView() {
         let documentCameraViewController = VNDocumentCameraViewController()
         documentCameraViewController.delegate = self
         present(documentCameraViewController, animated: true, completion: nil)
     }
     
+    
+    // PARSING IMAGES
     var textRecognitionRequest = VNRecognizeTextRequest { (request, error) in
         guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
         var detectedText = ""
 
-        // Vision will separate each line, phrase or sentence automatically into separate observations, which we can iterate over
         for observation in observations {
-            // Each observation contains a list of possible 'candidates' that the observation could be, such as ['lol', '1o1', '101']
-            // We can ask for all the topCandidates up to a certain limit.
-            // Each candidate contains the string and the confidence level that it is accurate.
             guard let topCandidate = observation.topCandidates(1).first else { return }
 
+            // DETECTED TEXT CONTAINS WHAT YOU NEED
+            // THIS IS WHAT YOU NEED!!
+            // THIS IS THE PARSED DATA FROM THE IMAGES!! HEREEEEE******
             detectedText += topCandidate.string
             detectedText += "\n"
         }
     }
     
+    // handler for parsing
     private func recognizeTextInImage(_ image: UIImage) {
         guard let cgImage = image.cgImage else { return }
 
@@ -79,6 +82,7 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
 }
 
 
+// on finish scanning calls handler
 extension HomeViewController {
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         for pageNumber in 0..<scan.pageCount {
