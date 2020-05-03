@@ -61,6 +61,12 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
             // THIS IS THE PARSED DATA FROM THE IMAGES!! HEREEEEE******
             detectedText += topCandidate.string
             detectedText += "\n"
+            print("New Detected Material:")
+            print(detectedText)
+            
+            
+            // Creating cleaned out version of this text
+            
         }
     }
     
