@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import VisionKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +28,32 @@ class HomeViewController: UIViewController {
     
     @IBAction func logInButton(_ sender: Any) {
         self.performSegue(withIdentifier: "ToLogIn", sender: self)
-        
-        
     }
     
+    @IBAction func scan(_ sender: Any) {
+        configureDocumentView()
+    }
     
     func setUpElements () {
         // Utilities.styleFilledButton(signUpButton)
         // Utilities.styleFilledButton(logInButton)
+    }
+    
+    private func configureDocumentView() {
+        let documentCameraViewController = VNDocumentCameraViewController()
+        documentCameraViewController.delegate = self
+        present(documentCameraViewController, animated: true, completion: nil)
+    }
+}
+
+
+extension HomeViewController {
+    func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
+        for pageNumber in 0..<scan.pageCount {
+            let image = scan.imageOfPage(at: pageNumber)
+            print(image)
+        }
+        controller.dismiss(animated:true, completion: nil)
     }
 }
 

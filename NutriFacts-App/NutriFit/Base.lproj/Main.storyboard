@@ -265,7 +265,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="scan button"/>
                                 <connections>
-                                    <action selector="scan:" destination="RL7-wD-RiZ" eventType="touchUpInside" id="DU7-55-Jbp"/>
+                                    <action selector="scan:" destination="RL7-wD-RiZ" eventType="touchUpInside" id="u1P-PM-ana"/>
                                 </connections>
                             </button>
                         </subviews>
