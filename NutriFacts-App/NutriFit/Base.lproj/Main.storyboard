@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BnU-qn-1Kf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -244,10 +244,10 @@
             </objects>
             <point key="canvasLocation" x="1771.0144927536232" y="546.42857142857144"/>
         </scene>
-        <!--Scan View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="pm8-fD-Ati">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="RL7-wD-RiZ" customClass="ScanViewController" customModule="NutriFacts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVC" id="RL7-wD-RiZ" customClass="HomeViewController" customModule="NutriFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="guZ-bQ-sfg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
