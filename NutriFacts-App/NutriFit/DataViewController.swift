@@ -6,15 +6,13 @@
 //  Copyright © 2020 Denis Tatar. All rights reserved.
 //
 
+
 import UIKit
+import Charts
 
 class DataViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
+    
+
 }
 

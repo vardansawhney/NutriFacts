@@ -28,6 +28,11 @@ class SignupViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    
+    @IBAction func testButtonToData(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToData", sender: self)
+    }
+    
     // This function is important!
     override func viewDidLoad() {
         super.viewDidLoad()

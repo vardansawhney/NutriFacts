@@ -14,6 +14,7 @@ target 'NutriFacts' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'GoogleSignIn'
+  pod 'Charts'
 
   target 'NutriFactsTests' do
     inherit! :search_paths 

@@ -18,7 +18,12 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
         // Do any additional setup after loading the view.
         setUpElements()
     }
-
+    
+    
+    @IBAction func viewScanButt(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToData1", sender: self)
+    }
+    
 
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
@@ -92,7 +97,6 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
             
             
             // For loop to go through each component
-            print("For loop bitch")
             for label in detectedText.split(separator: " ") {
                 
             /*
@@ -125,6 +129,7 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
             
         }
     }
+    @IBOutlet weak var viewScanButton: UIButton!
     
     // handler for parsing
     private func recognizeTextInImage(_ image: UIImage) {
