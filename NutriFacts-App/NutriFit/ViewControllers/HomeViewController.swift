@@ -81,6 +81,7 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
             "Iron": default_intake
         ]
         
+        // populate if percentage daily values exist
         for (index, line) in detected_array.enumerated() {
 
             if (line.contains("Fat")) {
@@ -150,3 +151,28 @@ extension HomeViewController {
     }
 }
 
+// sample data:
+/* ["Nutrition", "Facts", "Valeur", "nutritive", "Per 2 cookies (23 g) / Pour 2 biscuits (23 g)", "Amount", "% Daily Value", "Teneur", "% valeur quotidienne", "Calories / Calories 100", "Fat / Lipides 3.0 g", "5 %", "Saturated / saturés 0.5 g", "3 %", "+ Trans / trans 0 g", "Cholesterol / Cholestérol 0 mg", "0 %", "Sodium / Sodium 75 mg", "3 %", "Carbohydrate / Glucides 18 g", "6 %", "Fibre / Fibres 0 g", "0 %", "Sugars / Sucres 10 g", "Protein / Protéines 1 g", "Vitamin A / Vitamine A", "0 %", "Vitamin C / Vitamine C", "0 %", "Calcium / Calcium", "0 %", "Iron / Fer", "8 %", ""]
+[:]
+
+
+▿ 6 key/value pairs
+  ▿ (2 elements)
+    - key: "Fat"
+    - value: "5 %"
+  ▿ (2 elements)
+    - key: "Sodium"
+    - value: "3 %"
+  ▿ (2 elements)
+    - key: "Cholesterol"
+    - value: "0%"
+  ▿ (2 elements)
+    - key: "Protein"
+    - value: "0%"
+  ▿ (2 elements)
+    - key: "Carbohydrate"
+    - value: "6 %"
+  ▿ (2 elements)
+    - key: "Iron"
+    - value: "8 %"
+*/
