@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		033EC2969F423C32C1BD1F7B /* Pods_NutriFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB70D9DE396045B1161E54E /* Pods_NutriFacts.framework */; };
-		173E9D10245EC018007D9E7A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 173E9D0F245EC018007D9E7A /* icon.png */; };
+		0FDE487124607DFE00A3225A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE487024607DFE00A3225A /* icon.png */; };
 		173E9D16245EC764007D9E7A /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E9D15245EC764007D9E7A /* DataViewController.swift */; };
 		17787343245DDD49009EEB28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787342245DDD49009EEB28 /* AppDelegate.swift */; };
 		17787345245DDD49009EEB28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787344245DDD49009EEB28 /* SceneDelegate.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		173E9D0F245EC018007D9E7A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = "../../../../PNGs/App Icon/icon.png"; sourceTree = "<group>"; };
+		0FDE487024607DFE00A3225A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
 		173E9D15245EC764007D9E7A /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		1778733F245DDD49009EEB28 /* NutriFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17787342245DDD49009EEB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				17787348245DDD49009EEB28 /* Main.storyboard */,
 				1778734B245DDD50009EEB28 /* Assets.xcassets */,
 				1778734D245DDD50009EEB28 /* LaunchScreen.storyboard */,
-				173E9D0F245EC018007D9E7A /* icon.png */,
+				0FDE487024607DFE00A3225A /* icon.png */,
 				17787350245DDD50009EEB28 /* Info.plist */,
 			);
 			path = NutriFit;
@@ -257,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1778734F245DDD50009EEB28 /* LaunchScreen.storyboard in Resources */,
-				173E9D10245EC018007D9E7A /* icon.png in Resources */,
+				0FDE487124607DFE00A3225A /* icon.png in Resources */,
 				178FBFC4245E3E9F0057E68F /* GoogleService-Info.plist in Resources */,
 				1778734C245DDD50009EEB28 /* Assets.xcassets in Resources */,
 				1778734A245DDD49009EEB28 /* Main.storyboard in Resources */,
