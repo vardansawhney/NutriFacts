@@ -9,26 +9,23 @@ import Foundation
 class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelegate {
     
     // constants for the view controller
-//    var textRecognitionRequest = VNRecognizeTextRequest(completionHandler: nil)
     let textRecognitionWorkQueue = DispatchQueue(label: "TextRecognitionQueue", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUpElements()
     }
     
-    
-    @IBAction func viewScanButt(_ sender: Any) {
-        self.performSegue(withIdentifier: "ToData1", sender: self)
+    func setUpElements () {
+
     }
     
-
+    // HOME/ROOT view:
+    
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
     
-    // Buttons!
     @IBAction func signUpButton(_ sender: Any) {
         self.performSegue(withIdentifier: "SecondViewSegue", sender: self)
     }
@@ -37,13 +34,16 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
         self.performSegue(withIdentifier: "ToLogIn", sender: self)
     }
     
-    @IBAction func scan(_ sender: Any) {
-        configureDocumentView()
+    
+    // Scanning:
+    
+    // view scan button
+    @IBAction func viewScanButt(_ sender: Any) {
+        self.performSegue(withIdentifier: "ToData1", sender: self)
     }
     
-    func setUpElements () {
-        // Utilities.styleFilledButton(signUpButton)
-        // Utilities.styleFilledButton(logInButton)
+    @IBAction func scan(_ sender: Any) {
+        configureDocumentView()
     }
     
     // SCANNING WITH THE CAMERA
@@ -62,71 +62,11 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
         for observation in observations {
             guard let topCandidate = observation.topCandidates(1).first else { return }
 
-            // DETECTED TEXT CONTAINS WHAT YOU NEED
-            // THIS IS WHAT YOU NEED!!
-            // THIS IS THE PARSED DATA FROM THE IMAGES!! HEREEEEE******
+            // string to contain parsed data
             detectedText += topCandidate.string
             detectedText += "\n"
             print("New Detected Material:")
             print(detectedText)
-            
-            
-            // Creating cleaned out version of this text
-            // Sample code
-            
-
-            // let newArray = detectedText.components(separatedBy: " ")
-            let newArray =  detectedText.replacingOccurrences(of: "\n", with: " ")
-            
-
-            // var firstName: String = newArray[0]
-            // var lastName: String = newArray[1]
-            // print("NEW NAMES:")
-            // print(firstName)
-            // print(lastName)
-            print("New Array:")
-            print(newArray)
-            
-            // Initializing our 6 wanted values
-            let iron = 0
-            let potassium = 0
-            let calcium = 0
-            let cholesterol = 0
-            let saturated = 0
-            let carbohydrates = 0
-            
-            
-            // For loop to go through each component
-            for label in detectedText.split(separator: " ") {
-                
-            /*
-                if label == "Iron"{
-                    label ==
-                }
-                
-                if label == "Potassium"{
-                    
-                }
-                
-                if label == "Calcium"{
-                    
-                }
-                
-                if label == "Cholesterol"{
-                    
-                }
-                
-                if label == "Saturated"{
-                    
-                }
-                
-                if label == "Carbohydrates" {
-                    
-                }
-                
- */
-            }
-            
         }
     }
     @IBOutlet weak var viewScanButton: UIButton!
@@ -145,7 +85,6 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
             }
         }
     }
-    
 }
 
 

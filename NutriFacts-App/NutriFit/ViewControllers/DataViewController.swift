@@ -12,7 +12,5 @@ import UIKit
 
 class DataViewController: UIViewController {
     
-    
-
 }
 

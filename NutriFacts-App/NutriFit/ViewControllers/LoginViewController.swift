@@ -19,6 +19,7 @@ class LoginViewController: UIViewController {
     }
     
 
+    // Buttons
     @IBAction func backButton(_ sender: Any) {
         self.performSegue(withIdentifier: "ToHome", sender: self)
     }
@@ -26,9 +27,6 @@ class LoginViewController: UIViewController {
     @IBAction func signUpButton(_ sender: Any) {
         
     }
-    
-    
-    
     
     // Textfields
     @IBOutlet weak var emailTextField: UITextField!
@@ -38,7 +36,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var errorLabel: UILabel!
     
     
-    
+    // Action login tapped
     @IBAction func loginTapped(_ sender: Any) {
         // Validate Text Fields
         
@@ -74,23 +72,6 @@ class LoginViewController: UIViewController {
     func setUpElements () {
         // Hide the error label
         errorLabel.alpha = 0
-        
-        // Style the elements
-        // Utilities.styleTextField(emailTextField)
-        // Utilities.styleTextField(passwordTextField)
-        // Utilities.styleFilledButton(loginButton)
     }
-    
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
