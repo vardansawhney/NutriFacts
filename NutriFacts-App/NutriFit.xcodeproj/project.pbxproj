@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		033EC2969F423C32C1BD1F7B /* Pods_NutriFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB70D9DE396045B1161E54E /* Pods_NutriFacts.framework */; };
 		0FDE487124607DFE00A3225A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FDE487024607DFE00A3225A /* icon.png */; };
 		173E9D16245EC764007D9E7A /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173E9D15245EC764007D9E7A /* DataViewController.swift */; };
 		17787343245DDD49009EEB28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17787342245DDD49009EEB28 /* AppDelegate.swift */; };
@@ -21,7 +20,8 @@
 		178FBFC4245E3E9F0057E68F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 178FBFC3245E3E9F0057E68F /* GoogleService-Info.plist */; };
 		179C4DA7245E5BA800F3D3B7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179C4DA6245E5BA800F3D3B7 /* Constants.swift */; };
 		4435B04A245E057800B9F7F1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435B049245E057800B9F7F1 /* LoginViewController.swift */; };
-		AE21EB1627D9A6EAC6496031 /* Pods_NutriFactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5436DAF4760B6AFDA2D4D1EC /* Pods_NutriFactsTests.framework */; };
+		7A9D04BB534BF834517877F2 /* Pods_NutriFactsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6626C485C6A79B2F24BB9B2C /* Pods_NutriFactsTests.framework */; };
+		9FF1FDE1A1B28D9F33CAB747 /* Pods_NutriFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E170908DF2310B1C4CFAA /* Pods_NutriFacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		0FDE487024607DFE00A3225A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = SOURCE_ROOT; };
+		14ABA05F105376958E001444 /* Pods-NutriFactsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFactsTests.debug.xcconfig"; path = "Target Support Files/Pods-NutriFactsTests/Pods-NutriFactsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		173E9D15245EC764007D9E7A /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		1778733F245DDD49009EEB28 /* NutriFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NutriFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17787342245DDD49009EEB28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,13 +51,12 @@
 		178FBFC0245E34190057E68F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		178FBFC3245E3E9F0057E68F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		179C4DA6245E5BA800F3D3B7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		24E18FCFC760DDFD06F789F4 /* Pods-NutriFactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFactsTests.release.xcconfig"; path = "Target Support Files/Pods-NutriFactsTests/Pods-NutriFactsTests.release.xcconfig"; sourceTree = "<group>"; };
 		4435B049245E057800B9F7F1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		5436DAF4760B6AFDA2D4D1EC /* Pods_NutriFactsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutriFactsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		58E55EDF819636560127F54C /* Pods-NutriFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFacts.debug.xcconfig"; path = "Target Support Files/Pods-NutriFacts/Pods-NutriFacts.debug.xcconfig"; sourceTree = "<group>"; };
-		593B6D939761435EA384E809 /* Pods-NutriFacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFacts.release.xcconfig"; path = "Target Support Files/Pods-NutriFacts/Pods-NutriFacts.release.xcconfig"; sourceTree = "<group>"; };
-		6C4B2C71773CE74E4DD6F750 /* Pods-NutriFactsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFactsTests.debug.xcconfig"; path = "Target Support Files/Pods-NutriFactsTests/Pods-NutriFactsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7EB70D9DE396045B1161E54E /* Pods_NutriFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutriFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6626C485C6A79B2F24BB9B2C /* Pods_NutriFactsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutriFactsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CA6E60481CB69D6C647395 /* Pods-NutriFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFacts.debug.xcconfig"; path = "Target Support Files/Pods-NutriFacts/Pods-NutriFacts.debug.xcconfig"; sourceTree = "<group>"; };
+		8A156400003310567AA878E5 /* Pods-NutriFacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFacts.release.xcconfig"; path = "Target Support Files/Pods-NutriFacts/Pods-NutriFacts.release.xcconfig"; sourceTree = "<group>"; };
+		9BA44272455DAD81222C1F08 /* Pods-NutriFactsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NutriFactsTests.release.xcconfig"; path = "Target Support Files/Pods-NutriFactsTests/Pods-NutriFactsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C96E170908DF2310B1C4CFAA /* Pods_NutriFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NutriFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				033EC2969F423C32C1BD1F7B /* Pods_NutriFacts.framework in Frameworks */,
+				9FF1FDE1A1B28D9F33CAB747 /* Pods_NutriFacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE21EB1627D9A6EAC6496031 /* Pods_NutriFactsTests.framework in Frameworks */,
+				7A9D04BB534BF834517877F2 /* Pods_NutriFactsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,7 @@
 				17787341245DDD49009EEB28 /* NutriFit */,
 				17787340245DDD49009EEB28 /* Products */,
 				52B90ABC4D3D055DD195094B /* Pods */,
-				AFF932788C82AEA9F34593AA /* Frameworks */,
+				7401FB46FD0057DB5C3D5A68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,19 +138,19 @@
 		52B90ABC4D3D055DD195094B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				58E55EDF819636560127F54C /* Pods-NutriFacts.debug.xcconfig */,
-				593B6D939761435EA384E809 /* Pods-NutriFacts.release.xcconfig */,
-				6C4B2C71773CE74E4DD6F750 /* Pods-NutriFactsTests.debug.xcconfig */,
-				24E18FCFC760DDFD06F789F4 /* Pods-NutriFactsTests.release.xcconfig */,
+				66CA6E60481CB69D6C647395 /* Pods-NutriFacts.debug.xcconfig */,
+				8A156400003310567AA878E5 /* Pods-NutriFacts.release.xcconfig */,
+				14ABA05F105376958E001444 /* Pods-NutriFactsTests.debug.xcconfig */,
+				9BA44272455DAD81222C1F08 /* Pods-NutriFactsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		AFF932788C82AEA9F34593AA /* Frameworks */ = {
+		7401FB46FD0057DB5C3D5A68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EB70D9DE396045B1161E54E /* Pods_NutriFacts.framework */,
-				5436DAF4760B6AFDA2D4D1EC /* Pods_NutriFactsTests.framework */,
+				C96E170908DF2310B1C4CFAA /* Pods_NutriFacts.framework */,
+				6626C485C6A79B2F24BB9B2C /* Pods_NutriFactsTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,12 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1778735E245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFacts" */;
 			buildPhases = (
-				86A13EDC4219974216375B6D /* [CP] Check Pods Manifest.lock */,
+				EDB1FCAEACC0EC0A8AA1A5B4 /* [CP] Check Pods Manifest.lock */,
 				1778733B245DDD49009EEB28 /* Sources */,
 				1778733C245DDD49009EEB28 /* Frameworks */,
 				1778733D245DDD49009EEB28 /* Resources */,
-				C5D55C525231DE52108BD299 /* [CP] Embed Pods Frameworks */,
-				60FFED66EA259542D1A6F4A6 /* [CP] Copy Pods Resources */,
+				2DDBBCA5504ABEAD996C7239 /* [CP] Embed Pods Frameworks */,
+				3E1ED490D530B656F461259B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,7 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17787361245DDD51009EEB28 /* Build configuration list for PBXNativeTarget "NutriFactsTests" */;
 			buildPhases = (
-				B4E942E906B6571C096C72B8 /* [CP] Check Pods Manifest.lock */,
+				B7F65811E2CEA435A9FFCA6D /* [CP] Check Pods Manifest.lock */,
 				17787351245DDD51009EEB28 /* Sources */,
 				17787352245DDD51009EEB28 /* Frameworks */,
 				17787353245DDD51009EEB28 /* Resources */,
@@ -258,7 +258,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		60FFED66EA259542D1A6F4A6 /* [CP] Copy Pods Resources */ = {
+		2DDBBCA5504ABEAD996C7239 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E1ED490D530B656F461259B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,29 +292,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		86A13EDC4219974216375B6D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NutriFacts-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B4E942E906B6571C096C72B8 /* [CP] Check Pods Manifest.lock */ = {
+		B7F65811E2CEA435A9FFCA6D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,21 +314,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5D55C525231DE52108BD299 /* [CP] Embed Pods Frameworks */ = {
+		EDB1FCAEACC0EC0A8AA1A5B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NutriFacts-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NutriFacts/Pods-NutriFacts-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -507,17 +507,17 @@
 		};
 		1778735F245DDD51009EEB28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58E55EDF819636560127F54C /* Pods-NutriFacts.debug.xcconfig */;
+			baseConfigurationReference = 66CA6E60481CB69D6C647395 /* Pods-NutriFacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8R6LAF33TK;
+				DEVELOPMENT_TEAM = L7C4H63L7Z;
 				INFOPLIST_FILE = NutriFit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NutriFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denistatar.NutriFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -526,17 +526,17 @@
 		};
 		17787360245DDD51009EEB28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 593B6D939761435EA384E809 /* Pods-NutriFacts.release.xcconfig */;
+			baseConfigurationReference = 8A156400003310567AA878E5 /* Pods-NutriFacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8R6LAF33TK;
+				DEVELOPMENT_TEAM = L7C4H63L7Z;
 				INFOPLIST_FILE = NutriFit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.NutriFacts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denistatar.NutriFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -545,7 +545,7 @@
 		};
 		17787362245DDD51009EEB28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C4B2C71773CE74E4DD6F750 /* Pods-NutriFactsTests.debug.xcconfig */;
+			baseConfigurationReference = 14ABA05F105376958E001444 /* Pods-NutriFactsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,7 +568,7 @@
 		};
 		17787363245DDD51009EEB28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24E18FCFC760DDFD06F789F4 /* Pods-NutriFactsTests.release.xcconfig */;
+			baseConfigurationReference = 9BA44272455DAD81222C1F08 /* Pods-NutriFactsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

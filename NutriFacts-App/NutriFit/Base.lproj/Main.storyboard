@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BnU-qn-1Kf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -131,6 +131,14 @@
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUX-ur-20w" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="754" width="240" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <action selector="signInButton:" destination="4Og-39-VaP" eventType="valueChanged" id="78D-aU-JVg"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="tXC-GZ-0Dx"/>
@@ -142,6 +150,7 @@
                         <outlet property="errorLabel" destination="NLI-fE-mU8" id="aj7-eR-rck"/>
                         <outlet property="firstNameTextField" destination="Bo0-tF-Z2Y" id="GLX-vV-g9g"/>
                         <outlet property="lastNameTextField" destination="xQ5-9J-yYa" id="aL3-0c-1hE"/>
+                        <outlet property="signinButton" destination="QUX-ur-20w" id="DZH-QK-SOJ"/>
                         <segue destination="BnU-qn-1Kf" kind="showDetail" identifier="backToHome" id="sSc-Py-Rnt"/>
                         <segue destination="RL7-wD-RiZ" kind="showDetail" identifier="ToScan" id="lNC-dS-fl7"/>
                         <segue destination="U7I-cf-kBo" kind="showDetail" identifier="ToData" id="zP1-Oq-luG"/>
@@ -221,6 +230,11 @@
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgB-H3-722" customClass="GIDSignInButton">
+                                <rect key="frame" x="84" y="681" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="b7m-7j-HAI"/>
@@ -329,7 +343,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="tKX-oc-Fi6"/>
-        <segue reference="ytF-PE-jP0"/>
+        <segue reference="zP1-Oq-luG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ALL DATA-1" width="351" height="637"/>

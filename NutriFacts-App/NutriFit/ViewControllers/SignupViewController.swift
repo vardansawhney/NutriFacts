@@ -10,6 +10,8 @@ import UIKit
 import FirebaseAuth
 import Firebase
 import FirebaseFirestore
+// For google sign in
+import GoogleSignIn
 
 class SignupViewController: UIViewController {
     
@@ -28,6 +30,9 @@ class SignupViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    // Adding our Google Sign In Button!
+    @IBOutlet weak var signinButton: GIDSignInButton!
+    
     
     @IBAction func testButtonToData(_ sender: Any) {
         self.performSegue(withIdentifier: "ToData", sender: self)
@@ -35,13 +40,15 @@ class SignupViewController: UIViewController {
     
     // This function is important!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        setUpElements()
-    }
+      super.viewDidLoad()
+      // Having our Google Button sign in pop up
+      GIDSignIn.sharedInstance()?.presentingViewController = self
+      // Automatically sign in the user.
+      GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+
     
-    // Setting up our Sign up view correctly
+    }
+    // Setting up our Sign up view correctly, THIS IS NOT BEING USED!
     func setUpElements () {
         // Hiding the error label
         errorLabel.alpha = 0

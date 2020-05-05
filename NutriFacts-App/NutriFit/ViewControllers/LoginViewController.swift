@@ -8,12 +8,15 @@
 
 import UIKit
 import FirebaseAuth
+// Importing to use Google Sign In button
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
         setUpElements()
     }
