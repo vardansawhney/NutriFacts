@@ -45,23 +45,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     // Checking if our user has properly been able to sign in using GoogleSign iN
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-    if let error = error {
-      if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
-        print("The user has not signed in before or they have since signed out.")
-      } else {
-        print("\(error.localizedDescription)")
-      }
-      return
+        if let error = error {
+          if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            print("The user has not signed in before or they have since signed out.")
+          } else {
+            print("\(error.localizedDescription)")
+          }
+            return
+        }
+        // Sign in worked, let's store the values we need!
+        // Perform any operations on signed in user here.
+        let userId = user.userID                  // For client-side use only!
+        let idToken = user.authentication.idToken // Safe to send to the server
+        let fullName = user.profile.name
+        let givenName = user.profile.givenName
+        let familyName = user.profile.familyName
+        let email = user.profile.email
+        // Transitioning to another view controller after loggin in
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let WelcomeVC = storyboard.instantiateViewController(withIdentifier: "WelcomeVC")
+        // self.present(WelcomeVC, animated: false, completion: nil)
+        self.window?.rootViewController?.present(WelcomeVC, animated: false, completion: nil)
+        print(fullName)
+        print("SIGNED IN!!")
+        
     }
-    // Sign in worked, let's store the values we need!
-    // Perform any operations on signed in user here.
-    let userId = user.userID                  // For client-side use only!
-    let idToken = user.authentication.idToken // Safe to send to the server
-    let fullName = user.profile.name
-    let givenName = user.profile.givenName
-    let familyName = user.profile.familyName
-    let email = user.profile.email
-    }
+    
     
     // Function used to send a message to the user if they disconnect from sign in
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,

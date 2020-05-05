@@ -145,14 +145,12 @@ class SignupViewController: UIViewController {
         errorLabel.alpha = 1
     }
     
-    
+    // Transition to our Welcome page
     func transitionToHome() {
-        
+        // Creating the transition
         let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-        
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
-        
     }
     
 }

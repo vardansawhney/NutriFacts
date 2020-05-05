@@ -119,11 +119,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfQ-gp-88O">
-                                <rect key="frame" x="63" y="673" width="288" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Sign up with Google"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLI-fE-mU8">
                                 <rect key="frame" x="63" y="372" width="288" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -132,7 +127,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QUX-ur-20w" customClass="GIDSignInButton">
-                                <rect key="frame" x="87" y="754" width="240" height="60"/>
+                                <rect key="frame" x="61" y="672" width="292" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
@@ -153,7 +148,6 @@
                         <outlet property="signinButton" destination="QUX-ur-20w" id="DZH-QK-SOJ"/>
                         <segue destination="BnU-qn-1Kf" kind="showDetail" identifier="backToHome" id="sSc-Py-Rnt"/>
                         <segue destination="RL7-wD-RiZ" kind="showDetail" identifier="ToScan" id="lNC-dS-fl7"/>
-                        <segue destination="U7I-cf-kBo" kind="showDetail" identifier="ToData" id="zP1-Oq-luG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqI-vQ-BJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -215,14 +209,6 @@
                                     <action selector="loginTapped:" destination="SU9-VU-vzM" eventType="touchUpInside" id="ryt-jN-vj4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQO-TJ-3fY">
-                                <rect key="frame" x="61" y="614" width="288" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="log in with google"/>
-                                <connections>
-                                    <action selector="logInGoogle:" destination="SU9-VU-vzM" eventType="touchUpInside" id="VJF-Cq-Cmj"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGV-Js-fdK">
                                 <rect key="frame" x="61" y="318" width="286" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -231,7 +217,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MgB-H3-722" customClass="GIDSignInButton">
-                                <rect key="frame" x="84" y="681" width="240" height="128"/>
+                                <rect key="frame" x="63" y="604" width="288" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -342,8 +328,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tKX-oc-Fi6"/>
-        <segue reference="zP1-Oq-luG"/>
+        <segue reference="sSc-Py-Rnt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="ALL DATA-1" width="351" height="637"/>
@@ -351,13 +336,11 @@
         <image name="Banner bottom" width="510" height="329.5"/>
         <image name="Log in-1" width="94" height="34"/>
         <image name="Sign Up Button" width="288" height="59"/>
-        <image name="Sign up with Google" width="288" height="59"/>
         <image name="Top banner for data" width="655" height="378"/>
         <image name="VIEW YOUR SCAN" width="288" height="59"/>
         <image name="email" width="316" height="54"/>
         <image name="log in button-1" width="288" height="59"/>
         <image name="log in with facebook" width="288" height="59"/>
-        <image name="log in with google" width="288" height="59"/>
         <image name="logo" width="337" height="65"/>
         <image name="or" width="22" height="17"/>
         <image name="scan button" width="51" height="51"/>
