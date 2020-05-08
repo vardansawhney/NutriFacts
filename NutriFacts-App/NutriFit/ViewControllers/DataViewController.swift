@@ -12,5 +12,13 @@ import UIKit
 
 class DataViewController: UIViewController {
     
+    @IBOutlet weak var scan_label: UILabel!
+    
+    var data = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        scan_label.text = data
+    }
 }
 

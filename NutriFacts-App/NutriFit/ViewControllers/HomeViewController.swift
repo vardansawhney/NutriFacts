@@ -12,6 +12,8 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
     let textRecognitionWorkQueue = DispatchQueue(label: "TextRecognitionQueue", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
     // global variable for everything scanned
 //    let detectedText = ""
+    var detected_data_string = ""
+    var isHomeView = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,6 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
     }
     
     func setUpElements () {
-
     }
     
     // HOME/ROOT view:
@@ -39,11 +40,7 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
     
     // Scanning:
     
-    // view scan button
-    @IBAction func viewScanButt(_ sender: Any) {
-        self.performSegue(withIdentifier: "ToData1", sender: self)
-    }
-    
+    // scan + button
     @IBAction func scan(_ sender: Any) {
         configureDocumentView()
     }
@@ -55,8 +52,7 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
         present(documentCameraViewController, animated: true, completion: nil)
     }
     
-    
-    // PARSING IMAGES
+    // PARSING IMAGES after scanning, converts image to dict
     var textRecognitionRequest = VNRecognizeTextRequest { (request, error) in
         guard let observations = request.results as? [VNRecognizedTextObservation] else { return }
         var local_detected_text = ""
@@ -116,21 +112,34 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
                 }
             }
         }
+        var detected_data_dict = ["hi" : "world"]
+        detected_data_string = detected_data_dict.description
 //    dump(nutrient_dict)
         
     // turn the dictionary into JSON for the graphs
-        if let theJSONData = try? JSONSerialization.data(
-            withJSONObject: nutrient_dict,
-            options: [.prettyPrinted]) {
-           //just see the text
-            let theJSONText = String(data: theJSONData, encoding: .ascii)
-            print("JSON string = \(theJSONText!)")
-        }
+//        if let theJSONData = try? JSONSerialization.data(
+//            withJSONObject: nutrient_dict,
+//            options: [.prettyPrinted]) {
+//           //just see the text
+//            let theJSONText = String(data: theJSONData, encoding: .ascii)
+//            print("JSON string = \(theJSONText!)")
+//        }
     }
     
+    // view scan button
+    @IBAction func viewScanButt(_ sender: Any) {
+        // only set as true when login/sign up is complete and in HomeViewCOntroller
+        isHomeView = true
+        self.performSegue(withIdentifier: "ToData1", sender: self)
+    }
     
-    
-    @IBOutlet weak var viewScanButton: UIButton!
+    // transfer data to next view controller label
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (isHomeView) {
+            var vc = segue.destination as! DataViewController
+            vc.data = self.detected_data_string
+        }
+    }
     
     // handler for parsing
     private func recognizeTextInImage(_ image: UIImage) {
@@ -139,7 +148,8 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
         textRecognitionWorkQueue.async {
             let requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
             do {
-                try requestHandler.perform([self.textRecognitionRequest])
+                var value = ""
+                try value = requestHandler.perform([self.textRecognitionRequest])
 //                print(detectedText)
             } catch {
                 // lolll
@@ -150,7 +160,7 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
 }
 
 
-// on finish scanning calls handler
+// scans the images
 extension HomeViewController {
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         for pageNumber in 0..<scan.pageCount {
