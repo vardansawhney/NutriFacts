@@ -6,20 +6,24 @@ import VisionKit
 import Vision
 import Foundation
 
+// global temp variable storing scanned text
+var detect_text_global = ""
+
 class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelegate {
     
-    // constants for the view controller
+    // constant for the view controller
     let textRecognitionWorkQueue = DispatchQueue(label: "TextRecognitionQueue", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
-    // global variable for everything scanned
-//    let detectedText = ""
+    
+    // instance variables
     var detected_data_string = ""
     var isHomeView = false
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         setUpElements()
     }
+    
     
     func setUpElements () {
     }
@@ -38,9 +42,9 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
     }
     
     
-    // Scanning:
+    // SCANNING view:
     
-    // scan + button
+    // scan (+) button
     @IBAction func scan(_ sender: Any) {
         configureDocumentView()
     }
@@ -112,22 +116,26 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
                 }
             }
         }
-        var detected_data_dict = ["hi" : "world"]
-        detected_data_string = detected_data_dict.description
-//    dump(nutrient_dict)
-        
-    // turn the dictionary into JSON for the graphs
-//        if let theJSONData = try? JSONSerialization.data(
-//            withJSONObject: nutrient_dict,
-//            options: [.prettyPrinted]) {
-//           //just see the text
-//            let theJSONText = String(data: theJSONData, encoding: .ascii)
-//            print("JSON string = \(theJSONText!)")
-//        }
+       
+        // turn the dictionary into JSON for the graphs
+        if let theJSONData = try? JSONSerialization.data(
+            withJSONObject: nutrient_dict,
+            options: [.prettyPrinted]) {
+           //just see the text
+            let theJSONText = String(data: theJSONData, encoding: .ascii)
+            detect_text_global = "\(theJSONText!)"
+//            print(detect_text_global)
+        }
     }
     
     // view scan button
     @IBAction func viewScanButt(_ sender: Any) {
+        // set instance variable to detected data from global variable
+        detected_data_string = detect_text_global
+        print(detected_data_string)
+        // clear global temp
+//        detect_text_global = ""
+    
         // only set as true when login/sign up is complete and in HomeViewCOntroller
         isHomeView = true
         self.performSegue(withIdentifier: "ToData1", sender: self)
@@ -136,8 +144,9 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
     // transfer data to next view controller label
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (isHomeView) {
-            var vc = segue.destination as! DataViewController
+            let vc = segue.destination as! DataViewController
             vc.data = self.detected_data_string
+            isHomeView = false
         }
     }
     
@@ -148,24 +157,21 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
         textRecognitionWorkQueue.async {
             let requestHandler = VNImageRequestHandler(cgImage: cgImage, options: [:])
             do {
-                var value = ""
-                try value = requestHandler.perform([self.textRecognitionRequest])
-//                print(detectedText)
+                try requestHandler.perform([self.textRecognitionRequest])
             } catch {
-                // lolll
                 print(error)
             }
         }
     }
 }
 
-
-// scans the images
+// scans images
 extension HomeViewController {
     func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFinishWith scan: VNDocumentCameraScan) {
         for pageNumber in 0..<scan.pageCount {
             let image = scan.imageOfPage(at: pageNumber)
-            // scan the image to text
+            
+            // CALLS PARSE, scan the image to text
             self.recognizeTextInImage(image)
         }
         controller.dismiss(animated:true, completion: nil)

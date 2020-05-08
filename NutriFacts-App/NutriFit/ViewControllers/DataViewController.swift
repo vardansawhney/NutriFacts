@@ -19,6 +19,7 @@ class DataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scan_label.text = data
+//        print(data)
     }
 }
 
