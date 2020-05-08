@@ -144,7 +144,6 @@
                         <outlet property="lastNameTextField" destination="xQ5-9J-yYa" id="aL3-0c-1hE"/>
                         <segue destination="BnU-qn-1Kf" kind="showDetail" identifier="backToHome" id="sSc-Py-Rnt"/>
                         <segue destination="RL7-wD-RiZ" kind="showDetail" identifier="ToScan" id="lNC-dS-fl7"/>
-                        <segue destination="U7I-cf-kBo" kind="showDetail" identifier="ToData" id="zP1-Oq-luG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nqI-vQ-BJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -284,23 +283,29 @@
         <!--Data View Controller-->
         <scene sceneID="AMI-OU-m3B">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" id="U7I-cf-kBo" customClass="DataViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataViewController" id="U7I-cf-kBo" customClass="DataViewController" customModule="NutriFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Er5-A5-8Jb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Top banner for data" translatesAutoresizingMaskIntoConstraints="NO" id="896-cT-VYV">
-                                <rect key="frame" x="-105" y="-247" width="751" height="399"/>
+                                <rect key="frame" x="-105" y="-226" width="655" height="378"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ALL DATA-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tiy-Y2-IAU">
-                                <rect key="frame" x="-382" y="180" width="1179" height="628"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-tw-PAn">
+                                <rect key="frame" x="75" y="247" width="264" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ki0-Ug-KGL"/>
                     </view>
+                    <connections>
+                        <outlet property="scan_label" destination="6iq-tw-PAn" id="Sc7-P9-FdP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBk-Zh-AcV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,11 +333,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tKX-oc-Fi6"/>
-        <segue reference="ytF-PE-jP0"/>
+        <segue reference="sSc-Py-Rnt"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="ALL DATA-1" width="351" height="637"/>
         <image name="Back button" width="27" height="27"/>
         <image name="Banner bottom" width="510" height="329.5"/>
         <image name="Log in-1" width="94" height="34"/>
