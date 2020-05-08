@@ -117,7 +117,18 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
             }
         }
 //    dump(nutrient_dict)
+        
+    // turn the dictionary into JSON for the graphs
+        if let theJSONData = try? JSONSerialization.data(
+            withJSONObject: nutrient_dict,
+            options: [.prettyPrinted]) {
+           //just see the text
+            let theJSONText = String(data: theJSONData, encoding: .ascii)
+            print("JSON string = \(theJSONText!)")
+        }
     }
+    
+    
     
     @IBOutlet weak var viewScanButton: UIButton!
     
