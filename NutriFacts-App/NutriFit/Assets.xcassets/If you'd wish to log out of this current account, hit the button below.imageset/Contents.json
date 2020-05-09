@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "If you'd wish to log out of this current account, hit the button below.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "If you'd wish to log out of this current account, hit the button below@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "If you'd wish to log out of this current account, hit the button below@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
