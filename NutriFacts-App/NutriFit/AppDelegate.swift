@@ -20,13 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // Adding Google Sign In option!
         // Initialize sign-in
-        GIDSignIn.sharedInstance().clientID = "906819358039-6s6s78aqgmv6abi1s7m26u16mlof6qpp.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().clientID = "906819358039-e0774n6ai6r1t6nvc1qeeof2v6vqlp80.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         
         FirebaseApp.configure()
@@ -65,10 +64,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let WelcomeVC = storyboard.instantiateViewController(withIdentifier: "WelcomeVC")
         // self.present(WelcomeVC, animated: false, completion: nil)
-        self.window?.rootViewController?.present(WelcomeVC, animated: false, completion: nil)
+        // self.window?.rootViewController?.present(WelcomeVC, animated: false, completion: nil)
         print(fullName)
         print("SIGNED IN!!")
-        
     }
     
     

@@ -45,6 +45,7 @@ class SignupViewController: UIViewController {
       GIDSignIn.sharedInstance()?.presentingViewController = self
       // Automatically sign in the user.
       GIDSignIn.sharedInstance()?.restorePreviousSignIn()
+      // GIDSignIn.sharedInstance()?.uiDelegate = self
 
     
     }
