@@ -21,6 +21,12 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+ // <<<<<<< HEAD
+        
+        
+        // Do any additional setup after loading the view.
+// =======
+// >>>>>>> 9cf3cb496c90fbab14db4e847d004cd63ff3661b
         setUpElements()
     }
     

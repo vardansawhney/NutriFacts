@@ -8,12 +8,15 @@
 
 import UIKit
 import FirebaseAuth
+// Importing to use Google Sign In button
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
         setUpElements()
     }
@@ -53,11 +56,10 @@ class LoginViewController: UIViewController {
                 self.errorLabel.alpha = 1
             } else {
                 // No error, successful transition
+                // USING SAME TRANSITION AS SIGN UP VIEW CONTROLLER!!!
                 let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                
                 self.view.window?.rootViewController = homeViewController
                 self.view.window?.makeKeyAndVisible()
-                
             }
         }
     }

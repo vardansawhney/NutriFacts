@@ -10,7 +10,8 @@ import Foundation
 
 struct Constants {
     struct Storyboard {
-        
+        // Making constant for normal log in
         static let homeViewController = "WelcomeVC"
+        
     }
 }

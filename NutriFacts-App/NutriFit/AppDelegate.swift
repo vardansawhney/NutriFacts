@@ -8,18 +8,77 @@
 
 import UIKit
 import Firebase
+// Adding Google Sign In by using the steps from the following link: https://developers.google.com/identity/sign-in/ios/sign-in?ver=swift
+import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    //func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+    //    return
+    // }
+    
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Adding Google Sign In option!
+        // Initialize sign-in
+        GIDSignIn.sharedInstance().clientID = "906819358039-e0774n6ai6r1t6nvc1qeeof2v6vqlp80.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
+        
         FirebaseApp.configure()
         return true
     }
+    
+    // Adding Google Sign In option to our app
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url)
+    }
+    
+    // Adding Google Sign In option to our app
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+      return GIDSignIn.sharedInstance().handle(url)
+    }
+    
+    // Checking if our user has properly been able to sign in using GoogleSign iN
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+          if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
+            print("The user has not signed in before or they have since signed out.")
+          } else {
+            print("\(error.localizedDescription)")
+          }
+            return
+        }
+        // Sign in worked, let's store the values we need!
+        // Perform any operations on signed in user here.
+        let userId = user.userID                  // For client-side use only!
+        let idToken = user.authentication.idToken // Safe to send to the server
+        let fullName = user.profile.name
+        let givenName = user.profile.givenName
+        let familyName = user.profile.familyName
+        let email = user.profile.email
+        // Transitioning to another view controller after loggin in
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let WelcomeVC = storyboard.instantiateViewController(withIdentifier: "WelcomeVC")
+        // self.present(WelcomeVC, animated: false, completion: nil)
+        // self.window?.rootViewController?.present(WelcomeVC, animated: false, completion: nil)
+        print(fullName)
+        print("SIGNED IN!!")
+    }
+    
+    
+    // Function used to send a message to the user if they disconnect from sign in
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+      // Perform any operations when the user disconnects from app here.
+      // Printing our error message
+      print("User has disconnected")
+    }
+    
+    
 
     // MARK: UISceneSession Lifecycle
 
