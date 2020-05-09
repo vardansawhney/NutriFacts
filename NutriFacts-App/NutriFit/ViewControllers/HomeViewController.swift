@@ -18,9 +18,6 @@ class HomeViewController: UIViewController, VNDocumentCameraViewControllerDelega
     var detected_data_string = ""
     var isHomeView = false
     
-    @IBAction func TEST(_ sender: Any) {
-        self.performSegue(withIdentifier: "TEST", sender: self)
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
