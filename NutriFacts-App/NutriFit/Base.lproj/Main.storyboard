@@ -12,7 +12,7 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="NutriFacts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top banner" translatesAutoresizingMaskIntoConstraints="NO" id="Dpz-xG-bXH">
@@ -38,17 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5y-Ai-ef6">
                                 <rect key="frame" x="63" y="726" width="288" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="log in"/>
+                                <state key="normal" image="log in button-1"/>
                                 <connections>
                                     <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NYQ-Cl-HmS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdg-b0-cQf">
-                                <rect key="frame" x="145" y="556" width="125" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="TO PROFILE TEST"/>
-                                <connections>
-                                    <action selector="TEST:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLA-rk-Fp5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,9 +52,6 @@
                         <outlet property="signUpButton" destination="8aR-r0-bjq" id="1Nc-Yc-3d7"/>
                         <segue destination="4Og-39-VaP" kind="showDetail" identifier="SecondViewSegue" id="uHN-RX-YsM"/>
                         <segue destination="SU9-VU-vzM" kind="showDetail" identifier="ToLogIn" id="EVg-Di-o60"/>
-                        <segue destination="Vmg-Fq-yge" kind="popoverPresentation" identifier="TEST" id="iOy-Rg-HAK">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                        </segue>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,7 +78,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ema" textAlignment="natural" minimumFontSize="17" background="log in with facebook" translatesAutoresizingMaskIntoConstraints="NO" id="fJA-bJ-bY9">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" background="log in with facebook" translatesAutoresizingMaskIntoConstraints="NO" id="fJA-bJ-bY9">
                                 <rect key="frame" x="61" y="330" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -124,7 +113,7 @@
                                 <rect key="frame" x="141" y="49" width="133" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" background="email" disabledBackground="email" translatesAutoresizingMaskIntoConstraints="NO" id="Bo0-tF-Z2Y">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" background="email" translatesAutoresizingMaskIntoConstraints="NO" id="Bo0-tF-Z2Y">
                                 <rect key="frame" x="61" y="144" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -210,7 +199,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qj4-Ti-awt">
                                 <rect key="frame" x="61" y="392" width="288" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="log in"/>
+                                <state key="normal" image="log in button-1"/>
                                 <connections>
                                     <action selector="logInFacebook:" destination="SU9-VU-vzM" eventType="touchUpInside" id="01A-nt-PJ5"/>
                                     <action selector="loginTapped:" destination="SU9-VU-vzM" eventType="touchUpInside" id="ryt-jN-vj4"/>
@@ -319,226 +308,16 @@
             </objects>
             <point key="canvasLocation" x="3298.5507246376815" y="146.65178571428569"/>
         </scene>
-        <!--Sign Up New User Controller-->
-        <scene sceneID="zxp-CI-zvM">
-            <objects>
-                <viewController id="6dF-H4-k9R" customClass="SignUpNewUserController" customModule="NutriFacts" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="loz-HK-yP9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Please fill in the following information" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-vo-Jo5">
-                                <rect key="frame" x="20" y="182" width="240" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome, Vardan!" translatesAutoresizingMaskIntoConstraints="NO" id="m2U-BB-hEe">
-                                <rect key="frame" x="20" y="84" width="203" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Last Name" translatesAutoresizingMaskIntoConstraints="NO" id="rzO-X7-BLw">
-                                <rect key="frame" x="20" y="281" width="69" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Age" translatesAutoresizingMaskIntoConstraints="NO" id="jCj-Tf-L8H">
-                                <rect key="frame" x="23" y="387" width="25" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gender" translatesAutoresizingMaskIntoConstraints="NO" id="WIm-El-hl0">
-                                <rect key="frame" x="23" y="420" width="46" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Activity Level" translatesAutoresizingMaskIntoConstraints="NO" id="sGy-cl-eFk">
-                                <rect key="frame" x="23" y="452" width="71" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Weight (ibs)" translatesAutoresizingMaskIntoConstraints="NO" id="j9K-57-vik">
-                                <rect key="frame" x="23" y="492" width="71" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Goals" translatesAutoresizingMaskIntoConstraints="NO" id="cX6-cB-lG9">
-                                <rect key="frame" x="23" y="537" width="33" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intersection 33" translatesAutoresizingMaskIntoConstraints="NO" id="gUa-to-Laf">
-                                <rect key="frame" x="-2" y="714" width="416" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Email-1" translatesAutoresizingMaskIntoConstraints="NO" id="E9Z-O0-MpI">
-                                <rect key="frame" x="20" y="321" width="33" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="Line 12" translatesAutoresizingMaskIntoConstraints="NO" id="owi-vb-S1D">
-                                <rect key="frame" x="158" y="227" width="201" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RdZ-55-WK8">
-                                <rect key="frame" x="158" y="270" width="201" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="Line 13" translatesAutoresizingMaskIntoConstraints="NO" id="Dpa-ur-Mda">
-                                <rect key="frame" x="158" y="312" width="201" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCe-bC-UBK">
-                                <rect key="frame" x="101" y="678" width="213" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Submit button"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="First Name" translatesAutoresizingMaskIntoConstraints="NO" id="ic9-oA-Xcl">
-                                <rect key="frame" x="20" y="238" width="68" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="2Sl-P5-ppe"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aHr-6Q-4oF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1757.9710144927537" y="-787.5"/>
-        </scene>
-        <!--Edit Profile Controller-->
-        <scene sceneID="IWD-qW-mB4">
-            <objects>
-                <viewController id="Vmg-Fq-yge" customClass="EditProfileController" customModule="NutriFacts" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TPy-l6-Ndm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Intersection 32" translatesAutoresizingMaskIntoConstraints="NO" id="p0F-Ui-TNz">
-                                <rect key="frame" x="-1" y="-13" width="416" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Iris_Sf" translatesAutoresizingMaskIntoConstraints="NO" id="zVW-t2-8HC">
-                                <rect key="frame" x="137" y="63" width="144" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="First Name" translatesAutoresizingMaskIntoConstraints="NO" id="utd-gw-aEX">
-                                <rect key="frame" x="20" y="275" width="68" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Last Name" translatesAutoresizingMaskIntoConstraints="NO" id="3ib-0M-i0f">
-                                <rect key="frame" x="20" y="318" width="69" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Age" translatesAutoresizingMaskIntoConstraints="NO" id="5i7-XU-ziF">
-                                <rect key="frame" x="25" y="415" width="25" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gender" translatesAutoresizingMaskIntoConstraints="NO" id="izn-6T-aU7">
-                                <rect key="frame" x="25" y="448" width="46" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Activity Level" translatesAutoresizingMaskIntoConstraints="NO" id="6LB-0g-MVF">
-                                <rect key="frame" x="25" y="480" width="71" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Weight (ibs)" translatesAutoresizingMaskIntoConstraints="NO" id="x3n-z4-bnY">
-                                <rect key="frame" x="25" y="520" width="71" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Goals" translatesAutoresizingMaskIntoConstraints="NO" id="4JQ-3U-87H">
-                                <rect key="frame" x="25" y="565" width="33" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="If you'd wish to log out of this current account, hit the button below" translatesAutoresizingMaskIntoConstraints="NO" id="6sL-En-5Gm">
-                                <rect key="frame" x="112" y="620" width="195" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 28" translatesAutoresizingMaskIntoConstraints="NO" id="RR3-w4-v5Y">
-                                <rect key="frame" x="-142" y="707" width="698" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Email-1" translatesAutoresizingMaskIntoConstraints="NO" id="WdY-Nr-UDL">
-                                <rect key="frame" x="22" y="358" width="33" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="Line 12" translatesAutoresizingMaskIntoConstraints="NO" id="4Ql-s4-chL">
-                                <rect key="frame" x="160" y="264" width="201" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iz0-XM-Wl2">
-                                <rect key="frame" x="160" y="307" width="201" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" background="Line 13" translatesAutoresizingMaskIntoConstraints="NO" id="dbi-ZH-jEw">
-                                <rect key="frame" x="160" y="349" width="201" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khl-XS-IeQ">
-                                <rect key="frame" x="103" y="664" width="213" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Log out button"/>
-                                <connections>
-                                    <action selector="logOutButton:" destination="Vmg-Fq-yge" eventType="touchUpInside" id="35Y-MS-fCL"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vardan Iris" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-Km-aws">
-                                <rect key="frame" x="123" y="204" width="172" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkL-TO-5jP">
-                                <rect key="frame" x="42" y="734" width="69" height="69"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 95"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knF-0O-s81">
-                                <rect key="frame" x="156" y="786" width="25" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 34"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb1-lg-EG6">
-                                <rect key="frame" x="248" y="843" width="25" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 82"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuW-Pq-nz9">
-                                <rect key="frame" x="340" y="786" width="26" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 58"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOQ-wT-BIP">
-                                <rect key="frame" x="248" y="787" width="25" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Group 82"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="sIZ-f2-Op3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="fC2-h4-IDy"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="toHome" id="Bdo-P7-yHB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qgS-kl-PH6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2621.739130434783" y="-769.41964285714278"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="AxB-iI-SBI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="BnU-qn-1Kf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uUF-Uo-pT8">
-                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OSD-r2-JMn">
-                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
@@ -551,43 +330,17 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="iOy-Rg-HAK"/>
-        <segue reference="tKX-oc-Fi6"/>
-        <segue reference="Bdo-P7-yHB"/>
+        <segue reference="sSc-Py-Rnt"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="Activity Level" width="86" height="14"/>
-        <image name="Age" width="26" height="14"/>
         <image name="Back button" width="27" height="27"/>
         <image name="Banner bottom" width="510" height="329.5"/>
-        <image name="Email-1" width="36" height="14"/>
-        <image name="First Name" width="73" height="14"/>
-        <image name="Gender" width="48" height="14"/>
-        <image name="Goals" width="37" height="14"/>
-        <image name="Group 34" width="25" height="25"/>
-        <image name="Group 58" width="26" height="26"/>
-        <image name="Group 82" width="25" height="23"/>
-        <image name="Group 95" width="69" height="69"/>
-        <image name="If you'd wish to log out of this current account, hit the button below" width="214" height="30"/>
-        <image name="Intersection 32" width="375" height="136.5"/>
-        <image name="Intersection 33" width="375" height="136.5"/>
-        <image name="Iris_Sf" width="115" height="115"/>
-        <image name="Last Name" width="73" height="14"/>
-        <image name="Line 12" width="197" height="1"/>
-        <image name="Line 13" width="197" height="1"/>
         <image name="Log in-1" width="94" height="34"/>
-        <image name="Log out button" width="213" height="37"/>
-        <image name="Please fill in the following information" width="252" height="14"/>
-        <image name="Rectangle 28" width="435" height="111"/>
         <image name="Sign Up Button" width="288" height="59"/>
-        <image name="Submit button" width="213" height="37"/>
         <image name="Top banner for data" width="655" height="378"/>
         <image name="VIEW YOUR SCAN" width="288" height="59"/>
-        <image name="Vardan Iris" width="139" height="28"/>
-        <image name="Weight (ibs)" width="78" height="14"/>
-        <image name="Welcome, Vardan!" width="209" height="93"/>
         <image name="email" width="316" height="54"/>
-        <image name="log in" width="288" height="59"/>
+        <image name="log in button-1" width="288" height="59"/>
         <image name="log in with facebook" width="288" height="59"/>
         <image name="logo" width="337" height="65"/>
         <image name="or" width="22" height="17"/>
